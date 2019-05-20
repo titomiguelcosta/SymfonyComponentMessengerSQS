@@ -1,0 +1,7 @@
+framework:
+    messenger:
+        transports:
+            sqs: enqueue://sqs?topic[name]=symfony-messenger&queue[name]=symfony-messenger&receiveTimeout=10000
+
+        routing:
+            'App\Message\HelloWorldMessage': sqs

@@ -1,0 +1,4 @@
+enqueue:
+    sqs:
+        transport: '%env(resolve:ENQUEUE_SQS_DSN)%'
+        client: ~
